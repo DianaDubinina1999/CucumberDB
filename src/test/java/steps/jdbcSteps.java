@@ -12,7 +12,7 @@ public class jdbcSteps {
     Statement statement;
 
     public jdbcSteps() throws SQLException {
-        String connectionType = System.getProperty("local");
+        String connectionType = System.getProperty("remote");
         if (connectionType != null && connectionType.equals("remote")) {
 
             connection = DriverManager.getConnection
